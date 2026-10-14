@@ -35,7 +35,9 @@ cask "tuguidragos/tap/peel", trusted: true
 brew upgrade --cask peel
 ```
 
-Peel also says in About when a new version is out, and shows this command for a copy Homebrew installed.
+Peel also updates itself: choose Check for Updates in the Peel menu, or Install Update in About Peel when it says a
+new version is out. A copy Homebrew installed updates the same way. Since Peel updates itself, `brew upgrade` alone
+upgrades it only when the copy in Applications is older than the cask; naming it, as above, always does.
 
 ## Uninstall
 
@@ -52,8 +54,10 @@ To take Peel's own files as well, add `--zap`:
 brew uninstall --zap --cask peel
 ```
 
-That also moves Peel's History, exclusions, settings, and caches to the Trash, stops Peel's helper, and deletes
-the helper's record of what it moved, in `/private/var/db`. Homebrew asks for your password for the helper.
+That also moves Peel's History, exclusions, settings, and caches to the Trash, and the shell and ssh settings from
+Peel's Terminal page, which zsh and ssh then stop reading (Remove Peel, in a copy you downloaded, keeps those). It
+stops Peel's helper and deletes the helper's record of what it moved, in `/private/var/db`. Homebrew asks for your
+password for the helper.
 
 ## Help
 
