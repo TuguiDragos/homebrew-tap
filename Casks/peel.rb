@@ -12,6 +12,7 @@ cask "peel" do
     strategy :github_latest
   end
 
+  auto_updates true
   depends_on macos: :tahoe
 
   app "Peel.app"
@@ -36,6 +37,7 @@ cask "peel" do
         "~/Library/HTTPStorages/com.tuguidragos.Peel.binarycookies",
         "~/Library/HTTPStorages/com.tuguidragos.Peel.CLI",
         "~/Library/HTTPStorages/com.tuguidragos.Peel.CLI.binarycookies",
+        "~/Library/Logs/Peel",
         "~/Library/Preferences/com.tuguidragos.Peel.plist",
         "~/Library/Saved Application State/com.tuguidragos.Peel.savedState",
       ]
