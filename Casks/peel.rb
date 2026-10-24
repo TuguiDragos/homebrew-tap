@@ -1,6 +1,6 @@
 cask "peel" do
-  version "1.1.0"
-  sha256 "37fb0dcc483039aefc2652e16f8e2a1dc86a7da2f24bfa482c872c8661939e92"
+  version "1.2.0"
+  sha256 "8680da2e5d840c7730368eb336eda63e14c9d6faa1c0d66dfa030a053d7d3584"
 
   url "https://github.com/TuguiDragos/Peel/releases/download/v#{version}/Peel-#{version}.zip"
   name "Peel"
